@@ -94,3 +94,6 @@ D:\My Project\SmartHub\SmartHub\bin\Microsoft.AI.Web.xml
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.csprojResolveAssemblyReference.cache
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.dll
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.pdb
+D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.InitialCreate.resources
+D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.csproj.GenerateResource.Cache
+D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.InitialModel.resources

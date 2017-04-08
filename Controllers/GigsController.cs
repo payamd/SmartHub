@@ -13,14 +13,13 @@ namespace SmartHub.Controllers
         {
             _context=new ApplicationDbContext();
         }
-
+        [Authorize]
         public ActionResult Create()
         {
             var viewModel = new GigFormViewModel()
             {
                 Genres = _context.Genres.ToList()
             };
-           
             return View(viewModel);
         }
     }

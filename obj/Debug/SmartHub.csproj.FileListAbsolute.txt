@@ -98,3 +98,4 @@ D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.InitialCreate.reso
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.csproj.GenerateResource.Cache
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.InitialModel.resources
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.CreateGigTable.resources
+D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.OverrideConventionForGigsAndGenre.resources

@@ -31,14 +31,11 @@ namespace SmartHub.Controllers
         [HttpPost]
         public ActionResult Create(GigFormViewModel ViewModel)
         {
-            var _artist = User.Identity.GetUserId();
-            var artist = _context.Users.Single(u => u.Id == _artist);
-            var genre = _context.Genres.Single(g => g.Id == ViewModel.Genre);
             var gig = new Gig
             {
-                Artist = artist,
+                ArtistId = User.Identity.GetUserId(),
                 DateTime = DateTime.Parse(string.Format("{0} {1}",ViewModel.Date ,ViewModel.Time )),
-                Genre = genre,
+                GenreId = ViewModel.Genre,
                 Venue = ViewModel.Venue
             };
             _context.Gigs.Add(gig);

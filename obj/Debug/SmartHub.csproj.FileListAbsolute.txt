@@ -100,3 +100,5 @@ D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.InitialModel.resou
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.CreateGigTable.resources
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.OverrideConventionForGigsAndGenre.resources
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.populategenrestable.resources
+D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.foreignKey_Added.resources
+D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.foreignKey_Added2.resources

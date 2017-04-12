@@ -11,8 +11,10 @@ namespace SmartHub.ViewModels
         public string Venue { get; set; }
 
         [Required]
+        [FutureDate]
         public string Date { get; set; }
 
+        [ValidTime]
         [Required]
         public string Time { get; set; }
 

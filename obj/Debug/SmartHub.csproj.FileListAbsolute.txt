@@ -102,3 +102,4 @@ D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.OverrideConvention
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.populategenrestable.resources
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.foreignKey_Added.resources
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.foreignKey_Added2.resources
+D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.addnametouseridentity.resources

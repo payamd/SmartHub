@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-size: 17px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -28,12 +29,20 @@ textarea {
     background-color: #FF4342;
     border-color: #FF4342;
 }
+
     .navbar-inverse .navbar-nav > li > a {
         color: #fff;
     }
+
     .navbar-inverse .navbar-brand {
         color: #fff;
     }
+
+    .navbar-inverse .navbar-nav > .dropdown > a .caret {
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+    }
+
 body,
 h1,
 h2,
@@ -48,5 +57,24 @@ h6,
 .h5,
 .h6 {
     font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-   
+}
+
+.form-control {
+    font-size: 17px;
+    padding: 20px 15px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+}
+
+    .form-control:focus {
+        border-color: #FF4342;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+.btn {
+    font-size: 17px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+    padding: 7px 20px;
 }

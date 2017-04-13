@@ -21,7 +21,9 @@ namespace SmartHub.Controllers
         {
             var UpCommingGigs=_context.Gigs
                 .Include(g => g.Artist)
+                .Include(g=>g.Genre)
                 .Where(t => t.DateTime > DateTime.Now);
+            
             return View(UpCommingGigs);
         }
   

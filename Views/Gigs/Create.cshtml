@@ -1,4 +1,5 @@
-﻿@model SmartHub.ViewModels.GigFormViewModel
+﻿@using System.Web.UI.WebControls
+@model SmartHub.ViewModels.GigFormViewModel
 
 @{
     ViewBag.Title = "Create";
@@ -9,19 +10,20 @@
     @using (Html.BeginForm("create","Gigs"))
     {
         @Html.AntiForgeryToken()
+        <p class="alert alert-danger">All fields are <strong >required</strong>.</p>
         <div class="form-group">
             @Html.LabelFor(m=>m.Venue)
-            @Html.TextBoxFor(m=>m.Venue , new{@class="form-control"})
+            @Html.TextBoxFor(m=>m.Venue , new{@class="form-control" , autofocus="autofocus"})
             @Html.ValidationMessageFor(m=>m.Venue)
         </div>
         <div class="form-group">
             @Html.LabelFor(m => m.Date)
-            @Html.TextBoxFor(m => m.Date, new { @class = "form-control" })
+            @Html.TextBoxFor(m => m.Date, new { @class = "form-control", PlaceHolder = "eg - 1 Jan 2020" })
             @Html.ValidationMessageFor(m => m.Date)
         </div>
         <div class="form-group">
             @Html.LabelFor(m => m.Time)
-            @Html.TextBoxFor(m => m.Time, new { @class = "form-control" })
+            @Html.TextBoxFor(m => m.Time, new { @class = "form-control",PlaceHolder="eg - 10:10" })
             @Html.ValidationMessageFor(m => m.Time)
         </div>
         <div class="form-group">
@@ -30,7 +32,7 @@
             @Html.ValidationMessageFor(m => m.Genre)
         </div>
         
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" class="btn btn-danger">Save</button>
     }
 
 

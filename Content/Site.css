@@ -88,7 +88,7 @@ h6,
         -webkit-box-shadow: none;
     }
 
-.btn {
+.btn.submit {
     font-size: 17px;
     -ms-border-radius: 9px;
     border-radius: 9px;
@@ -142,3 +142,9 @@ h6,
         font-size:15px;
         
     }
+            .gigs > li .details button {
+                font-size: 13px;
+                -ms-border-radius: 6px;
+                border-radius: 6px;
+                padding: 3px 10px ; 
+            }

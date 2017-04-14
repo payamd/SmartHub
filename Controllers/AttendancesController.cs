@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Linq;
 using System.Web.Http;
 using Microsoft.AspNet.Identity;
+using SmartHub.Dtos;
 using SmartHub.Models;
 
 namespace SmartHub.Controllers
@@ -20,11 +17,11 @@ namespace SmartHub.Controllers
         }
 
         [HttpPost]
-        public IHttpActionResult Attend([FromBody] int gigId)
+        public IHttpActionResult Attend(AttendanceDto dto)
         {
             var UserId = User.Identity.GetUserId();
 
-            var exist = _context.Attendances.Any(a => a.AttendeeId == UserId && a.GigId == gigId);
+            var exist = _context.Attendances.Any(a => a.AttendeeId == UserId && a.GigId == dto.GigId);
             if (exist)
             {
                 return BadRequest("the gig is already selected");
@@ -32,7 +29,7 @@ namespace SmartHub.Controllers
 
             var attendance = new Attendance
             {
-                GigId = gigId,
+                GigId = dto.GigId,
                 AttendeeId = UserId
             };
             _context.Attendances.Add(attendance);

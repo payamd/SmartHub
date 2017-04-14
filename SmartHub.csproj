@@ -226,8 +226,13 @@
     <Compile Include="Migrations\201704131235535_addnametouseridentity.Designer.cs">
       <DependentUpon>201704131235535_addnametouseridentity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704141210111_addattendance.cs" />
+    <Compile Include="Migrations\201704141210111_addattendance.Designer.cs">
+      <DependentUpon>201704141210111_addattendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -353,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704131235535_addnametouseridentity.resx">
       <DependentUpon>201704131235535_addnametouseridentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704141210111_addattendance.resx">
+      <DependentUpon>201704141210111_addattendance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

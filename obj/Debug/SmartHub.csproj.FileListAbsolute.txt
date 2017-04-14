@@ -104,3 +104,9 @@ D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.foreignKey_Added.r
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.foreignKey_Added2.resources
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.addnametouseridentity.resources
 D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.addattendance.resources
+D:\My Project\SmartHub\SmartHub\bin\System.Net.Http.Formatting.dll
+D:\My Project\SmartHub\SmartHub\bin\System.Web.Http.dll
+D:\My Project\SmartHub\SmartHub\bin\System.Web.Http.WebHost.dll
+D:\My Project\SmartHub\SmartHub\bin\System.Net.Http.Formatting.xml
+D:\My Project\SmartHub\SmartHub\bin\System.Web.Http.xml
+D:\My Project\SmartHub\SmartHub\bin\System.Web.Http.WebHost.xml

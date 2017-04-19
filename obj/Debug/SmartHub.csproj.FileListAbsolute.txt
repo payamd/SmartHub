@@ -110,3 +110,4 @@ D:\My Project\SmartHub\SmartHub\bin\System.Web.Http.WebHost.dll
 D:\My Project\SmartHub\SmartHub\bin\System.Net.Http.Formatting.xml
 D:\My Project\SmartHub\SmartHub\bin\System.Web.Http.xml
 D:\My Project\SmartHub\SmartHub\bin\System.Web.Http.WebHost.xml
+D:\My Project\SmartHub\SmartHub\obj\Debug\SmartHub.Migrations.addedfollowers.resources

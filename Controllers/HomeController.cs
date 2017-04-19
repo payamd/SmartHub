@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using SmartHub.Models;
+using SmartHub.ViewModels;
 
 namespace SmartHub.Controllers
 {
@@ -19,12 +19,18 @@ namespace SmartHub.Controllers
 
         public ActionResult Index()
         {
-            var UpCommingGigs=_context.Gigs
+            var upCommingGigs=_context.Gigs
                 .Include(g => g.Artist)
                 .Include(g=>g.Genre)
                 .Where(t => t.DateTime > DateTime.Now);
-            
-            return View(UpCommingGigs);
+
+            var viewModel = new GigsViewModel
+            {
+                UpCommingGigs = upCommingGigs,
+                ShowActions = User.Identity.IsAuthenticated
+            };
+
+            return View(viewModel);
         }
   
     }

@@ -199,10 +199,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Dtos\AttendanceDto.cs" />
+    <Compile Include="Dtos\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -265,6 +267,7 @@
     <Compile Include="ViewModels\Account\RegisterViewModel.cs" />
     <Compile Include="ViewModels\Account\ResetPasswordViewModel.cs" />
     <Compile Include="ViewModels\Account\SendCodeViewModel.cs" />
+    <Compile Include="ViewModels\GigsViewModel.cs" />
     <Compile Include="ViewModels\Manage\AddPhoneNumberViewModel.cs" />
     <Compile Include="ViewModels\Manage\ChangePasswordViewModel.cs" />
     <Compile Include="ViewModels\Manage\ConfigureTwoFactorViewModel.cs" />
@@ -332,6 +335,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Gigs\Create.cshtml" />
+    <Content Include="Views\Gigs\Attending.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

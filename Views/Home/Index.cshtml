@@ -1,10 +1,10 @@
-﻿@model IEnumerable<SmartHub.Models.Gig>
+﻿@model SmartHub.ViewModels.GigsViewModel
 @{
     ViewBag.Title = "Home Page";
 }
 
 <ul class="gigs">
-    @foreach (var gig in Model)
+    @foreach (var gig in Model.UpCommingGigs)
     {
         <li>
             <div class="date">
@@ -12,9 +12,19 @@
                 <div class="day">@gig.DateTime.ToString("d ")</div>
             </div>
             <div class="details">
-                <span class="artist">@gig.Artist.Name</span>
-                <span class="genre">@gig.Genre.Name</span>
-                <button data-gig-id="@gig.Id" class="btn btn-default btn-sm js-toggle-attendance">Going?</button>
+                <span class="artist">@gig.Artist.Name 
+                    @if(@Model.ShowActions)
+                    {
+                    <button data-user-id="@gig.ArtistId" class="btn btn-link btn-sm js-toggle-follow">Follow</button>
+                      }
+                </span>
+                <span class="genre">@gig.Genre.Name 
+                    @if(@Model.ShowActions)
+                    {
+                    <button data-gig-id="@gig.Id" class="btn btn-default btn-sm js-toggle-attendance">Going?</button>
+                    }
+                </span>
+               
             </div>
         </li>
     }
@@ -35,6 +45,18 @@
                             button.removeClass("btn-default").addClass("btn-success").text("Yup");
                         })
                         .fail(function() {
+                            alert("something go wrong!");
+                        });
+
+                });
+
+                $(".js-toggle-follow").click(function (e) {
+                    var button = $(e.target); 
+                    $.post("/api/followings", { FolloweeId: button.attr("data-user-id") })
+                        .done(function () {
+                            button.text("Following");
+                        })
+                        .fail(function () {
                             alert("something go wrong!");
                         });
 

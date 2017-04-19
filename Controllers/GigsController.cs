@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.AccessControl;
 using System.Web.Mvc;
@@ -15,6 +17,26 @@ namespace SmartHub.Controllers
         public GigsController()
         {
             _context=new ApplicationDbContext();
+        }
+
+        [Authorize]
+        public ActionResult Attending()
+        {
+            var userId = User.Identity.GetUserId();
+            var gigs = _context.Attendances
+                .Where(a => a.AttendeeId == userId)
+                .Select(a=>a.Gig)
+                .Include(g=>g.Artist)
+                .Include(g=>g.Genre)
+                .ToList();
+
+            var viewModel = new GigsViewModel
+            {
+                UpCommingGigs = gigs,
+                ShowActions = User.Identity.IsAuthenticated
+            };
+
+            return View(viewModel);
         }
 
         [Authorize]

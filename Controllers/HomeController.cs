@@ -27,10 +27,11 @@ namespace SmartHub.Controllers
             var viewModel = new GigsViewModel
             {
                 UpCommingGigs = upCommingGigs,
-                ShowActions = User.Identity.IsAuthenticated
+                ShowActions = User.Identity.IsAuthenticated,
+                Heading = "Upcomming Gigs"
             };
 
-            return View(viewModel);
+            return View("Gigs",viewModel);
         }
   
     }

@@ -7,5 +7,6 @@ namespace SmartHub.ViewModels
     {
         public IEnumerable<Gig> UpCommingGigs { get; set; }
         public bool ShowActions { get; set; }
+        public string Heading { get; set; }
     }
 }
